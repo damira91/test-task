@@ -1,0 +1,273 @@
+body {
+	margin: 0;
+	background: #f7f8f9;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper {
+	background: #fff;
+	width: 85%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	margin: 120px auto;
+	
+}
+	
+.image {
+	width:40%;
+	height: auto;	
+	background: #37c5ef;
+	border-radius: 20px 0 0 20px;
+	-webkit-border-radius: 20px 0 0 20px;
+	-moz-border-radius: 20px 0 0 20px;
+		
+}
+.img {
+	margin: auto;
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px 0 0 20px;
+	-webkit-border-radius: 20px 0 0 20px;
+	-moz-border-radius: 20px 0 0 20px;
+}
+.form-container {
+	width: 60%;
+	margin: auto;
+	
+}
+.form {
+	width: 80%;
+	margin: auto;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.sub {
+	 margin: 20px 0;
+}
+.col-25{
+	float: left;
+	width: 25%;
+	margin-top: 14px;
+}
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 14px;
+}
+
+label, span {
+	display: inline-block;
+	font-size: 14px;
+	padding: 12px 12px 12px 0;
+	color: #818587;
+	
+}
+.gender {
+	padding: 0;
+}
+input[type="text"], input[type="email"] {
+	width: 100%;
+	padding: 10px 13px;
+	border: 2px solid #ebf0f3;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius:5px;
+	resize: vertical;
+	background: #fcfcfd;
+	color: #c8d3dc;
+}
+input::-webkit-input-placeholder {
+	color: #c8d3dc;
+	font-family: 'Roboto', sans-serif;
+}
+input::-moz-input-placeholder {
+	color: #c8d3dc;
+	font-family: 'Roboto', sans-serif;
+}
+input::-ms-input-placeholder {
+	color: #c8d3dc;
+	font-family: 'Roboto', sans-serif;
+}
+input:-ms-input-placeholder {
+	color: #c8d3dc;
+	font-family: 'Roboto', sans-serif;
+}
+input::placeholder {
+	color: #c8d3dc;
+	font-family: 'Roboto', sans-serif;
+}
+*:focus::-webkit-input-placeholder {
+	color: transparent;
+ }
+ 
+ 
+ *:focus::-ms-input-placeholder {
+	color: transparent;
+ }
+.radio label {
+	position: relative;
+	padding-left: 50px;
+	cursor: pointer;
+	width: 20%;
+	line-height: 40px;
+
+}
+.radio input {
+	position: absolute;
+	opacity: 0;
+}
+.radio-control {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 40px;
+	width: 40px;
+	background: #fcfcfd;
+	color: #dfe7ea;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	text-align: center;
+}
+.male:before {
+	content: "\f222";
+	font-family: FontAwesome;
+	font-size: 24px;
+}
+.female:before {
+	content: "\f221";
+	font-family: FontAwesome;
+	font-size: 24px;
+}
+.radio label:hover input ~ .radio-control,
+.radio input:focus ~ .radio-control {
+	background: #95eb75;
+	color: #fff;	
+}
+.radio input:checked ~ .radio-control {
+	color: #fff;
+	background: #95eb75;	
+   }
+.btn {
+	display: flex;
+	justify-content: center;
+}
+.cancel:hover {
+	background: red;
+	color: black;
+}
+.save:hover {
+	background: #95eb75;
+	color: white;
+}
+button {
+background: #f5f8fa;
+color: #888c90;
+padding: 16px 50px;
+border: none;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius:5px;
+cursor: pointer;
+width: 100%;
+text-transform: uppercase;
+}
+.red {
+	background: red;
+	color: #000;
+}
+.green {
+	background: #95eb75;
+	color: #fff;
+}
+.center {
+	display: flex;
+	justify-content: space-around;
+}
+.bronze {
+	color: #ffbb75;
+}
+.bronze:hover{
+	font-size: 20px;
+}
+.silver {
+	color: #948277;
+}
+.silver:hover{
+	font-size: 20px;
+}
+.gold {
+	color: #fff38d;
+}
+.gold:hover{
+	font-size: 20px;
+}
+.link {
+	text-decoration: none;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+	
+	.wrapper {
+		margin: 30px auto;
+	}
+	.image {
+		display: none;
+	}
+	.form {
+		height: 95%;
+		width: 100%;
+	}
+	.col-25, .col-75 {
+		width: 100%;
+		margin-top: 0;
+	}
+	button {
+		padding: 16px 20px;
+		}
+	.btn {
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+	
+}
+@media screen and (min-width: 640px) and (max-width: 1000px) {
+
+	.image {
+		position: relative;
+		height: 100%;	
+		padding-top: 100%;	
+
+	}
+	.img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: auto;
+		
+	}
+	.col-25{
+		float: left;
+		width: 30%;
+		margin-top: 14px;
+	}
+	.col-75 {
+		float: left;
+		width: 65%;
+		margin-top: 14px;
+	}
+}

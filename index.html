@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<title>Registration form</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="image"><img src="img/img.png" alt="profile" class="img"></div>
+		<div class="form-container">
+			<form method="post" action="#" class="form">
+				<div class="row">
+					<div class="col-25">
+						<label for="name">Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name='name' required  placeholder="Luke Skywalker">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<span>Gender</span>
+					</div>
+					<div class="col-75 radio">
+						<label class="gender">
+							<input type="radio" name="sex" value="male">Male
+							<div class="radio-control male"></div>
+						</label>
+						<label class="gender">
+							<input type="radio" name="sex" value="female">Female
+							<div class="radio-control female"></div>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="date">Date of Birth</label>
+					</div>
+					<div class="col-75">
+						<input type="text" placeholder="May 25, 1977">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="email">Email</label>
+					</div>
+					<div class="col-75">
+						<input type="email" name="email"placeholder="lukeskywalker@galaxy.com" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="city">City</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="city" placeholder="Moisture Farm">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="country">Country</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="country" placeholder="Tatooine">
+					</div>
+				</div>
+				<div class="row sub">
+					<div class="col-25">
+						<label for="subscription">Subscription</label>
+					</div>
+					<div class="col-75 center">
+						<a href="#" class="link"><span class="bronze">Bronze</span></a>
+						<a href="#" class="link"><span class="silver">Silver</span></a>
+						<a href="#" class="link"><span class="gold">Gold</span></a>
+					</div>
+				</div>
+				<div class="col-25"></div>
+				<div class="col-75 btn">
+					<button class="cancel" type="submit">cancel</button>
+					<span></span>
+					<button class="save" type="submit">save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
